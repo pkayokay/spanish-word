@@ -1,13 +1,13 @@
-<h1>  
-<%= @word.spanish %>
+<h1 class="animated bounceIn">  
+<%= link_to "#{@word.spanish}", "http://www.spanishdict.com/translate/#{@word.spanish}", :target => "_blank" %>
 </h1>
 <span id="dash"></span>
-<h1>  
-<%= @word.english %>
+<h1 class="animated bounceIn">  
+<%= link_to "#{@word.english}", "http://www.spanishdict.com/translate/#{@word.english}", :target => "_blank" %>
 </h1>
 <span id="break"></span>
-<h2><%= @word.sentencespanish %></h2>
-<h2><%= @word.sentenceenglish %></h2>
+<h2 class="animated bounceIn"><%= @word.sentencespanish %></h2>
+<h2 class="animated bounceIn"><%= @word.sentenceenglish %></h2>
 <div>
 <p>
 <%= link_to root_path do %>New Word<%end%>
