@@ -1,8 +1,11 @@
-<h1><%= @word.spanish %></h1>
-<h1><%= @word.english %></h1>
+<h1>  
+<%= link_to "#{@word.spanish}", "http://www.spanishdict.com/translate/#{@word.spanish}", :target => "_blank" %>
+</h1>
+<span id="dash"></span>
+<h1>  
+<%= link_to "#{@word.english}", "http://www.spanishdict.com/translate/#{@word.english}", :target => "_blank" %>
+</h1>
+<span id="break"></span>
 <h2><%= @word.sentencespanish %></h2>
 <h2><%= @word.sentenceenglish %></h2>
-<p><%= link_to "Learn more...", "http://www.spanishdict.com/translate/#{@word.spanish}", :target => "_blank" %></p>
-
- <!-- link_to "External link", "http://foo.bar", :target => "_blank"
- "http://#{user.facebook}"%>
+<p><%= link_to "New word!", root_path %></p>

@@ -3,35 +3,103 @@
 
 
 body {
-  background-color: #3097E7;
-  color: #fff;
-  padding: 20px;
   font-family: "Fjalla One";
 }
 
-a {
-  color: #fff;
+h1, h2, h3, p {
+  margin: 0;
 }
 
-a:hover,
+a,
 a:focus,
 a:active {
-  color: #f7f7f7;
+  color: #333;
   text-decoration: none;
 }
+
+a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
+#dash {
+  margin: 0 40px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  color: #fff;
+  background-color: #333;
+}
+
+
+
+.heading h1 {
+  font-size: 1em;
+  padding: 50px 0 20px;
+}
+
+.heading h2 {
+  font-size: 0.5em;
+  padding-bottom: 30px;
+}
+
+
 .content {
   text-align: center;
+  color: #333;
 }
 
-h1 {
 
+
+.content h1,
+.content p {
+  display: inline-block;
+}
+
+.content {
+  font-size: 38px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  .content {
+    font-size: 25px;
+  }
+  #dash {
+    margin: 0 20px;
+  }
 
 }
 
-h2 {
-
-
+.content h1 {
+  font-size: 1.6em;
+  margin: 50px 0 60px;
+  text-decoration: underline;
 }
+
+.content h2 {
+  font-size: 0.7em;
+  margin: 0 0 30px;
+}
+
+.content p {
+  font-size: 0.6em;
+  margin: 50px 0 10px;
+  display: inline-block;
+  background: #fb5151;
+  padding: 12px 16px 9px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content p a {
+  color: #fff !important;
+}
+
 
 p {
 
