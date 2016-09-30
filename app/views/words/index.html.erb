@@ -1,6 +1,8 @@
 <h1><%= @word.spanish %></h1>
 <h1><%= @word.english %></h1>
-<h1><%= @word.sentencespanish %></h1>
-<h1><%= @word.sentenceenglish %></h1>
-<h1><%= @word.link %></h1>
+<h2><%= @word.sentencespanish %></h2>
+<h2><%= @word.sentenceenglish %></h2>
+<p><%= link_to "Learn more...", "http://www.spanishdict.com/translate/#{@word.spanish}", :target => "_blank" %></p>
 
+ <!-- link_to "External link", "http://foo.bar", :target => "_blank"
+ "http://#{user.facebook}"%>
