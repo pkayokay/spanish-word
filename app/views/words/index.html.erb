@@ -8,4 +8,5 @@
 <span id="break"></span>
 <h2><%= @word.sentencespanish %></h2>
 <h2><%= @word.sentenceenglish %></h2>
-<p><%= link_to "New word!", root_path %></p>
+<p><%= link_to root_path do %>New Word!<%end%></p>
+
