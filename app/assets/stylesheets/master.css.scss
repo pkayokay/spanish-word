@@ -47,13 +47,6 @@ a:hover {
 }
 
 
-.content {
-  text-align: center;
-  color: #333;
-}
-
-
-
 .content h1,
 .content p {
   display: inline-block;
@@ -63,6 +56,8 @@ a:hover {
   font-size: 38px;
   margin-top: 20px;
   padding: 10px;
+  text-align: center;
+  color: #333;
 }
 
 @media (max-width: 500px) {
@@ -79,6 +74,7 @@ a:hover {
   font-size: 1.6em;
   margin: 50px 0 60px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .content h2 {
@@ -88,16 +84,21 @@ a:hover {
 
 .content p {
   font-size: 0.6em;
-  margin: 50px 0 10px;
+  margin: 50px 0 30px;
   display: inline-block;
   background: #fb5151;
   padding: 12px 16px 9px;
   border-radius: 5px;
   cursor: pointer;
+  transition: all .2s;
 }
 
 .content p a {
   color: #fff !important;
+}
+
+.content p:hover {
+  background: #ff6c6c;
 }
 
 
