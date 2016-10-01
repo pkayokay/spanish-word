@@ -48,9 +48,11 @@ a:hover {
   display: inline-block;
 }
 
+
+
 .content {
   font-size: 38px;
-  margin: 40px auto 20px;
+  margin: 80px auto 20px;
   text-align: center;
   border: 13px solid #e2e2e2;
   color: #333;
@@ -101,8 +103,9 @@ a:hover {
   .content {
     font-size: 25px;
     padding: 7px;
-    border: 10px solid #333;
+    border: 10px solid #e2e2e2;
     min-width: 90%;
+    margin-top: 40px;
   }
   .content p {
     margin: 20px 0 20px;
@@ -112,6 +115,7 @@ a:hover {
     margin-top: 38px;
   }
 }
+
 
 
 
