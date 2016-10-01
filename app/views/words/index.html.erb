@@ -1,12 +1,8 @@
-<h1 class="animated fadeIn">  
-<%= link_to "#{@word.spanish}", "http://www.spanishdict.com/translate/#{@word.spanish}", :target => "_blank" %>
-</h1>
-<span id="dash">-</span>
-<h1 class="animated fadeIn">  
-<%= link_to "#{@word.english}", "http://www.spanishdict.com/translate/#{@word.english}", :target => "_blank" %>
+<h1 class="animated bounceIn">  
+<%= link_to "#{@word.spanish}(#{@word.english})", "http://www.spanishdict.com/translate/#{@word.spanish}", :target => "_blank" %>
 </h1>
 <span id="break"></span>
-<h2 class="animated fadeIn"><%= @word.sentencespanish %></h2>
-<h2 class="animated fadeIn"><%= @word.sentenceenglish %></h2>
+<h2 class="animated bounceIn"><%= @word.sentencespanish %></h2>
+<h2 class="animated bounceIn"><%= @word.sentenceenglish %></h2>
 
 
